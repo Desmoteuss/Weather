@@ -18,11 +18,7 @@ const updateCity  = async (city) => {
 
 const choosenCity = await getCity(city);
 const weather = await getWeather ( choosenCity.Key);
-return {
-
-choosenCity: choosenCity,
-weather : weather
-};
+return {choosenCity,weather};
 
 };
 
