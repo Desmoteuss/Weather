@@ -27,7 +27,7 @@ const getCity = async (city) => {
 
 
 
-return data[0];
+return data[0];//response the closes match/ first in the array
 
 };
 

@@ -1,4 +1,18 @@
 const cityForm = document.querySelector('form');
+const card = document.querySelector('.card');
+const details = document.querySelector('.details');
+
+const updateUI = (data)=> {
+    const cityDets = data.citiDets;
+    const weather = data.weather;
+
+    details.innerHTML=``;
+  if(card.classList.contains('d-none')) {
+
+  
+    card.classList.remove('d-none');
+    }
+}
 
 const updateCity  = async (city) => {
 
