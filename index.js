@@ -6,9 +6,13 @@ const icon = document.querySelector('.icon img');
 
 
 const updateUI = (data)=> {
-    const { cityDets, weather } = data;
+    // const { cityDets, weather } = data;
+console.log(data);
+    const choosenCity = data.choosenCity;
+    const weather = data.weather;
+
     details.innerHTML = `
-    <h5 class="my-3">${weather.WeatherIcon}</h5>
+    <h5 class="my-3">${choosenCity.EnglishName}</h5>
     <div class="my-3">${weather.WeatherText}</div>
     <div class="display-4 my-4">
       <span>${weather.Temperature.Metric.Value}</span>
@@ -29,8 +33,6 @@ const updateUI = (data)=> {
 
 
   if(card.classList.contains('d-none')) {
-
-  
     card.classList.remove('d-none');
     }
 };
