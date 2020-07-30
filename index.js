@@ -72,3 +72,14 @@ cityForm.addEventListener('submit', e => {
       .then(data => updateUI(data))
       .catch(err => console.log(err));
   });
+
+
+  const user1 = {
+    username : 'asd',
+    email: 'asd@asd.uk',
+login(){console.log('login');
+},
+logout(){console.log('logout');
+}
+};
+
