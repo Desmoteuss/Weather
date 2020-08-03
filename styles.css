@@ -1,6 +1,7 @@
 body{
-  background: #B0B0B0;
-  letter-spacing: 0.2em;
+  background: #B0B0B0;//
+
+  letter-spacing: 0.3em;
   font-size: 0.8em;
 }
 .container{
